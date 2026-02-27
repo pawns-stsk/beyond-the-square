@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond the Square - Trang chủ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/home-logo.webp" alt="Logo Beyond the Square" class="logo-img">
+                </a>
+            </div>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="thong-tin.html">Thông tin</a></li>
+                    <li class="dropdown">
+                        <a href="#dang-ky">Đăng ký ▾</a>
+                        <ul class="submenu">
+                            <li><a href="bang-gia-ve.html">Bảng giá vé</a></li>
+                            <a href="coming-soon.html" class="btn-highlight">Mua vé</a>
+                        </ul>
+                    </li>
+                    <li><a href="doi-tac.html">Đối tác</a></li>
+                    <li><a href="lien-he.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<section class="hero" id="trang-chu">
+    <div class="hero-overlay"></div>
+    
+    <div class="container hero-content-wrapper">
+        
+        <div class="hero-text-col">
+            <h2 class="sub-title">CHÀO MỪNG ĐẾN VỚI</h2>
+            <h1 class="main-title">BEYOND THE SQUARE</h1>
+            <p class="description">Buổi PROM đầu tiên và lớn nhất dành cho sinh viên tốt nghiệp tại Trường Đại học Tôn Đức Thắng</p>
+            <a href="mua-ve.html" class="hero-btn">ĐẶT VÉ NGAY</a>
+        </div>
+
+        <div class="hero-pawn-col">
+            <div class="pawn-wrapper">
+                <img src="img/pawn-transparent.png" alt="Quân Tốt Vàng 3D Beyond The Square" class="pawn-floating-img">
+                <div class="pawn-shadow"></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <section class="countdown-section">
+        <div class="container countdown-flex">
+            <div class="date-box">
+                <span class="label">BEYOND THE SQUARE DATE</span>
+                <span class="date">19/06/2027</span>
+            </div>
+            
+            <div class="timer-box">
+                <div class="time-item">
+                    <span id="days">00</span>
+                    <small>NGÀY</small>
+                </div>
+                <div class="time-item">
+                    <span id="hours">00</span>
+                    <small>GIỜ</small>
+                </div>
+                <div class="time-item">
+                    <span id="minutes">00</span>
+                    <small>PHÚT</small>
+                </div>
+                <div class="time-item">
+                    <span id="seconds">00</span>
+                    <small>GIÂY</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="marquee-section">
+        <div class="marquee-wrapper">
+            <div class="marquee-group">
+                <img src="https://images.unsplash.com/photo-1519671482538-eb725194d403?w=400" alt="Prom">
+                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400" alt="Prom">
+                <img src="https://images.unsplash.com/photo-1514525253440-b393452e8d03?w=400" alt="Prom">
+                <img src="https://images.unsplash.com/photo-1541532713592-796d3878bf1c?w=400" alt="Prom">
+            </div>
+            <div class="marquee-group">
+                <img src="https://images.unsplash.com/photo-1519671482538-eb725194d403?w=400" alt="Prom">
+                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400" alt="Prom">
+                <img src="https://images.unsplash.com/photo-1514525253440-b393452e8d03?w=400" alt="Prom">
+                <img src="https://images.unsplash.com/photo-1541532713592-796d3878bf1c?w=400" alt="Prom">
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section" id="thong-tin">
+        <div class="container">
+            <h2 class="section-heading">VỀ SỰ KIỆN</h2>
+            
+            <div class="info-grid">
+                <div class="info-left">
+                    <p class="info-desc">
+                        The Great TDTU Gatsby sẽ đưa bạn trở về thập niên 20 rực rỡ với không gian sang trọng và đẳng cấp. 
+                        Nơi hội tụ của âm nhạc đỉnh cao và những khoảnh khắc thanh xuân không thể nào quên.
+                    </p>
+                    <div class="video-container">
+                        <div id="player"></div>
+                    </div>
+                </div>
+
+                <div class="info-right">
+                    <div class="cta-card">
+                        <h3>BẠN ĐÃ SẴN SÀNG?</h3>
+                        <p>Khám phá chi tiết lịch trình và khách mời đặc biệt ngay hôm nay.</p>
+                        <a href="thong-tin.html" class="btn-cta">
+                                TÌM HIỂU THÊM <span class="arrow">→</span>
+                        </a>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sponsor-section" id="doi-tac">
+        <div class="container">
+            <h2 class="section-heading">NHÀ TÀI TRỢ</h2>
+            <div class="sponsor-logos">
+                <img src="https://via.placeholder.com/150x80?text=DIAMOND" alt="Sponsor" class="diamond">
+                <img src="https://via.placeholder.com/150x80?text=GOLD" alt="Sponsor" class="gold">
+                <img src="https://via.placeholder.com/150x80?text=SILVER" alt="Sponsor" class="silver">
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    
+</body>
+
+
+
+<footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>BEYOND THE SQUARE</h3>
+                <p>Buổi PROM đầu tiên và lớn nhất dành cho sinh viên tốt nghiệp tại Trường Đại học Tôn Đức Thắng.</p>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Tiktok</a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>LIÊN KẾT</h3>
+                <ul>
+                    <li><a href="thong-tin.html">Về sự kiện</a></li>
+                    <li><a href="mua-ve.html">Mua vé ngay</a></li>
+                    <li><a href="doi-tac.html">Nhà tài trợ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>LIÊN HỆ</h3>
+                <p>📍 ĐH Tôn Đức Thắng, Tân Hưng, TP.HCM</p>
+                <p>📧 pawns.stsk@gmail.com</p>
+                <p>📞 0917.071.130 (Trưởng BTC)</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 PAWNS Team. All rights reserved.</p>
+        </div>
+    </footer>
+
+</html>
