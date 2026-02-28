@@ -54,11 +54,13 @@ function onYouTubeIframeAPIReady() {
         width: '100%',
         videoId: 'M7lc1UVf-VE', // Thử thay bằng 'M7lc1UVf-VE' để test nếu vẫn đen
         playerVars: {
-        'enablejsapi': 1,
-        /* CỰC KỲ QUAN TRỌNG: 
-           Sử dụng window.location.origin để tự động lấy link web online của bạn */
-        'origin': window.location.origin 
-    },
+            'playsinline': 1,
+            'rel': 0,
+            'modestbranding': 1,
+            'enablejsapi': 1,
+            /* CHỈNH SỬA DÒNG NÀY: Xóa origin hoặc ép về link github của bạn */
+            'origin': 'https://pawns-stsk.github.io' 
+        },
         events: {
             'onReady': onPlayerReady,
             'onError': onPlayerError
@@ -302,4 +304,5 @@ function onPlayerError(event) {
             clearInterval(checkPaymentInterval); // Dừng check tiền
         });
     }
+
 });
