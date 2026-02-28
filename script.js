@@ -1,3 +1,37 @@
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+        height: '100%',
+        width: '100%',
+        videoId: 'M7lc1UVf-VE', // Thử thay bằng 'M7lc1UVf-VE' để test nếu vẫn đen
+        playerVars: {
+            'playsinline': 1,
+            'rel': 0,
+            'modestbranding': 1,
+            'enablejsapi': 1,
+            /* CHỈNH SỬA DÒNG NÀY: Xóa origin hoặc ép về link github của bạn */
+            'origin': 'https://pawns-stsk.github.io' 
+        },
+        events: {
+            'onReady': onPlayerReady,
+            'onError': onPlayerError
+        }
+    });
+}
+
+function onPlayerReady(event) {
+    console.log("YouTube Player Ready!");
+}
+
+function onPlayerError(event) {
+    console.log("YouTube Error: " + event.data);
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     
     // ======================================================
@@ -42,39 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // ======================================================
 // YOUTUBE API - PHẢI ĐỂ NGOÀI ĐỂ LÀ HÀM TOÀN CỤC
 // ======================================================
-var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-var player;
-function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-        height: '100%',
-        width: '100%',
-        videoId: 'M7lc1UVf-VE', // Thử thay bằng 'M7lc1UVf-VE' để test nếu vẫn đen
-        playerVars: {
-            'playsinline': 1,
-            'rel': 0,
-            'modestbranding': 1,
-            'enablejsapi': 1,
-            /* CHỈNH SỬA DÒNG NÀY: Xóa origin hoặc ép về link github của bạn */
-            'origin': 'https://pawns-stsk.github.io' 
-        },
-        events: {
-            'onReady': onPlayerReady,
-            'onError': onPlayerError
-        }
-    });
-}
-
-function onPlayerReady(event) {
-    console.log("YouTube Player Ready!");
-}
-
-function onPlayerError(event) {
-    console.log("YouTube Error: " + event.data);
-}
     
     // ======================================================
     // 2. ĐỒNG HỒ SỰ KIỆN (ĐẾM NGƯỢC)
@@ -306,3 +308,4 @@ function onPlayerError(event) {
     }
 
 });
+
